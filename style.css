@@ -1,0 +1,28 @@
+body {
+  background: #fcfcc0;
+  background: cornsilk;
+  width: 200px;
+}
+
+div#paste-div {
+  font-size: 4em;
+  margin: auto;
+  display: block;
+  text-align: center;
+  color: #6cedfc;
+  padding: 10%;
+  font-family: 'VT323', monospace;
+}
+
+div#downloaded {
+  font-size: 0.8em;
+}
+
+div#paste-div img {
+  width: 100px;
+  height: auto;
+}
+
+div#paste-div img#download {
+  width: 35%;
+}
