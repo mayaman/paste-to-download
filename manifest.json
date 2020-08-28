@@ -1,16 +1,12 @@
 {
-  "name": "Paste to Download",
-  "version": "0.0.2",
-  "description": "Paste to download images and gifs!",
+  "name": "Paste to download",
+  "version": "0.0.3",
+  "description": "Paste to download makes it easy to save images copied to your clipboard.",
   "permissions": [
     "activeTab"
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "browser_action": {
-    "default_title": "Paste to Download",
+    "default_title": "Paste to download",
     "default_popup": "index.html",
     "default_icon": {
       "16": "assets/logo16x16.png",

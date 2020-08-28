@@ -20,11 +20,13 @@ function handlePaste(e) {
   pastedData = clipboardData.getData("text/html");
 
   // Display pasted data and download
-  document.getElementById("paste-div").innerHTML =
-    pastedData + "<br>" + '<div id="downloaded"> DOWNLOADED! </div>';
+  document.getElementById("title").innerHTML = "DOWN- <br> LOADED!";
+  document.getElementById("title").style.fontSize = "64px";
 
-  let allImages = document.getElementsByTagName("img");
-
+  // Get images pasted
+  let parser = new DOMParser();
+  let dom = parser.parseFromString(pastedData, "text/html");
+  let allImages = dom.getElementsByTagName('img');
   for (let i = 0; i < allImages.length; i++) {
     let img = allImages[i];
     let imageSource = img.src;
