@@ -2,9 +2,6 @@
   "name": "Paste to download",
   "version": "0.0.3",
   "description": "Paste to download makes it easy to save images copied to your clipboard.",
-  "permissions": [
-    "activeTab"
-  ],
   "browser_action": {
     "default_title": "Paste to download",
     "default_popup": "index.html",
